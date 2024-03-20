@@ -58,8 +58,10 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\look.cs" />
-    <Compile Include="Assets\movement.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Gun.cs" />
+    <Compile Include="Assets\Scripts\movement.cs" />
+    <Compile Include="Assets\Scripts\weaponJiggle.cs" />
+    <Compile Include="Assets\Scripts\look.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
