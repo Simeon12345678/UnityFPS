@@ -63,7 +63,9 @@
     <Compile Include="Assets\Scripts\playerShoot.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\weaponJiggle.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\rocketLauncher.cs" />
     <Compile Include="Assets\Scripts\look.cs" />
+    <Compile Include="Assets\Scripts\rocket.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

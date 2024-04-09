@@ -64,6 +64,7 @@ public class Gun : MonoBehaviour
 
     bool CanShoot() => !isReloading && timeSinceLastShot > 1f / fireRate / 60f;
 
+    // todo
     void onGunShot()
     {
         throw new NotImplementedException();
@@ -77,6 +78,8 @@ public class Gun : MonoBehaviour
             {
                 if (Physics.Raycast(muzzle.position, transform.forward, out RaycastHit hit, maxDistance))
                 {
+                    Idamageable damageable = hit.transform.GetComponent<Idamageable>(); // find target that can be damaged
+                    damageable?.ReceiveDMG(damage); // deal the damage
                     Debug.Log(hit.transform.name);
                 }
 

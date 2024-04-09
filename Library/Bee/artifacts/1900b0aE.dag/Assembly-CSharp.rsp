@@ -363,7 +363,9 @@
 "Assets/Scripts/look.cs"
 "Assets/Scripts/movement.cs"
 "Assets/Scripts/playerShoot.cs"
+"Assets/Scripts/rocket.cs"
 "Assets/Scripts/ScriptableObjects/Gun.cs"
+"Assets/Scripts/ScriptableObjects/rocketLauncher.cs"
 "Assets/Scripts/weaponJiggle.cs"
 -langversion:9.0
 

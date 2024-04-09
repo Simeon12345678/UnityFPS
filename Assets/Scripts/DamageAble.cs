@@ -2,15 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageAble : MonoBehaviour
+public interface Idamageable
 {
-    // Start is called before the first frame update
-    void Start()
+    public void ReceiveDMG(float damage);
+}
+
+public class DamageAble : MonoBehaviour, Idamageable
+{
+    [SerializeField]
+    float health = 100f;
+
+    public void ReceiveDMG(float damage)
     {
-        
+        health -= damage;
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+            Debug.Log("dead");
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
