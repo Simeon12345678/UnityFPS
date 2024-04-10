@@ -367,6 +367,7 @@
 "Assets/Scripts/ScriptableObjects/Gun.cs"
 "Assets/Scripts/ScriptableObjects/rocketLauncher.cs"
 "Assets/Scripts/weaponJiggle.cs"
+"Assets/Scripts/weaponSwitch.cs"
 -langversion:9.0
 
 /deterministic

@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ScriptableObjects\Gun.cs" />
+    <Compile Include="Assets\Scripts\weaponSwitch.cs" />
     <Compile Include="Assets\Scripts\DamageAble.cs" />
     <Compile Include="Assets\Scripts\playerShoot.cs" />
     <Compile Include="Assets\Scripts\movement.cs" />
