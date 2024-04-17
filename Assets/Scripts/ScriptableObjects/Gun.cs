@@ -7,9 +7,6 @@ using UnityEngine.InputSystem.HID;
 public class Gun : MonoBehaviour
 {
     [SerializeField]
-    new string name;
-
-    [SerializeField]
     float damage;
 
     [SerializeField]
@@ -32,13 +29,13 @@ public class Gun : MonoBehaviour
     bool isReloading;
     float timeSinceLastShot;
 
-    void Start()
+    private void Start()
     {
         playerShoot.shootInput += Shoot;
         playerShoot.reloadInput += BeginReload;
     }
 
-    void Update()
+    private void Update()
     {
         timeSinceLastShot += Time.deltaTime;
         Debug.DrawRay(muzzle.position, muzzle.forward);
@@ -62,7 +59,7 @@ public class Gun : MonoBehaviour
         isReloading = false;
     }
 
-    bool CanShoot() => !isReloading && timeSinceLastShot > 1f / fireRate / 60f;
+    private bool CanShoot() => !isReloading && timeSinceLastShot > 1f / fireRate / 60f;
 
     // todo
     void onGunShot()
@@ -70,7 +67,7 @@ public class Gun : MonoBehaviour
         throw new NotImplementedException();
     }
 
-    void Shoot()
+    private void Shoot()
     {
         if (currentAmmo > 0)
         {
